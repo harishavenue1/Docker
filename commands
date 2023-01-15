@@ -1,0 +1,18 @@
+docker image ls
+docker pull mysql or bitnami/nginx
+docker run imageID [ex: 2ff]
+
+--see container status
+docker ps -a
+
+--delete conatiner id
+docker rm containerID [Ex: 6de]
+
+--remove all containers
+docker rm $(docker ps -a -q)
+
+--to get only containers iDs
+docker ps -a -q
+
+--to delete images
+docker rmi imageID [Ex: 2ff]
